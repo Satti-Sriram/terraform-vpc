@@ -1,0 +1,10 @@
+name: VPC Setup
+
+on:
+  workflow_dispatch:
+
+jobs:
+    setup_vpc:
+        runs-on: ubuntu-24.04
+        steps:
+            - run: echo "setup vpc now"
