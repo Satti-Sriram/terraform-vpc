@@ -2,6 +2,7 @@ name: VPC Setup
 
 on:
   workflow_dispatch:
+  push:
 
 jobs:
     setup_vpc:
