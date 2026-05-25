@@ -9,3 +9,8 @@ jobs:
         runs-on: ubuntu-24.04
         steps:
             - run: echo "setup vpc now"
+            - run: |
+                ls ${{github.workspace}}
+                echo ${{github.event_name}}
+                echo ${{github.repository}}
+                
