@@ -8,11 +8,13 @@ jobs:
     setup_vpc:
         runs-on: ubuntu-24.04
         steps:
+
             - run: echo "setup vpc now"
-            - run: |
+            - name: "custom script"
+              run: |
                 ls ${{github.workspace}}
                 echo ${{github.event_name}}
                 echo ${{github.repository}}
                 echo "env details"
-                echo env
+                echo ${{env}}
 
