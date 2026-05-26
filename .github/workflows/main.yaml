@@ -13,4 +13,6 @@ jobs:
                 ls ${{github.workspace}}
                 echo ${{github.event_name}}
                 echo ${{github.repository}}
-                
+                echo "env details"
+                echo env
+
